@@ -93,3 +93,24 @@ ul li span {
 ul li span:hover {
   background: #edeef0;
 }
+footer {
+  text-align: center;
+  font-size: 17px;
+  margin-top: 40px;
+}
+
+@media (max-width: 900px) {
+  .todo-app {
+    width: 65%;
+  }
+  button {
+    font-size: 10px;
+    padding: 10px 30px;
+  }
+  input {
+    font-size: 10px;
+  }
+  footer {
+    font-size: 14px;
+  }
+}
