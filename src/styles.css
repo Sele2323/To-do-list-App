@@ -65,7 +65,7 @@ ul li ::before {
   border-radius: 50%;
   background-position: center;
   background-size: cover;
-  background-image: url("images/circle.png");
+  background-image: url("images/unchecked.svg");
   top: 12px;
   left: 8px;
 }
@@ -74,8 +74,9 @@ ul li.checked {
   color: #555;
 }
 ul li.checked::before {
-  background-image: url("src/images/checked.jpeg");
+  background-image: url("images/checked.jpeg");
 }
+
 ul li span {
   position: absolute;
   right: 0;

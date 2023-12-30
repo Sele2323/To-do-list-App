@@ -19,7 +19,7 @@ listContainer.addEventListener(
   "click",
   function (e) {
     if (e.target.tagName === "LI") {
-      e.target.classList.toogle("checked");
+      e.target.classList.toggle("checked");
       saveData();
     } else if (e.target.tagName === "SPAN") {
       e.target.parentElement.remove();
@@ -33,6 +33,9 @@ function saveData() {
   localStorage.setItem("data", listContainer.innerHTML);
 }
 function showTask() {
-  listContainer.innerHTML = localStorage.getItem("data");
+  const storedData = localStorage.getItem("data");
+  if (storedData) {
+    listContainer.innerHTML = localStorage.getItem("data");
+  }
 }
 showTask();
