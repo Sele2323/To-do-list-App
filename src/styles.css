@@ -3,6 +3,8 @@
   min-height: 100vh;
   background: linear-gradient(135deg, #153677, #4e085f);
   padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
 .todo-app {
   width: 100%;
@@ -96,7 +98,7 @@ ul li span:hover {
 footer {
   text-align: center;
   font-size: 17px;
-  margin-top: 40px;
+  margin-top: auto;
 }
 
 @media (max-width: 900px) {
